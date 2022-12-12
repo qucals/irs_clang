@@ -2,6 +2,7 @@
 #define IRSCLANG_IRSTIDYMODULE_H
 
 #include "ClassFieldNaming.h"
+#include "FuncParamsNaming.h"
 #include "TypeNamingCheck.h"
 #include "TypedefNamingCheck.h"
 #include <clang-tidy/ClangTidyModule.h>
@@ -24,6 +25,7 @@ private:
     aCheckFactories.registerCheck<TypeNamingCheck>("irs-type-naming");
     aCheckFactories.registerCheck<TypedefNamingCheck>("irs-typedef-naming");
     aCheckFactories.registerCheck<ClassFieldNaming>("irs-class-field-naming");
+    aCheckFactories.registerCheck<FuncParamsNaming>("irs-func-params-naming");
   }
 };
 

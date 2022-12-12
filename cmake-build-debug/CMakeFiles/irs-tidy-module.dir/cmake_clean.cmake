@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/irs-tidy-module.dir/ClangTidyModule/ClassFieldNaming.cpp.o"
+  "CMakeFiles/irs-tidy-module.dir/ClangTidyModule/FuncParamsNaming.cpp.o"
   "CMakeFiles/irs-tidy-module.dir/ClangTidyModule/IrsTidyModule.cpp.o"
   "CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypeNamingCheck.cpp.o"
   "CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypedefNamingCheck.cpp.o"

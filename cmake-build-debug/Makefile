@@ -215,6 +215,30 @@ ClangTidyModule/ClassFieldNaming.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/ClassFieldNaming.cpp.s
 .PHONY : ClangTidyModule/ClassFieldNaming.cpp.s
 
+ClangTidyModule/FuncParamsNaming.o: ClangTidyModule/FuncParamsNaming.cpp.o
+.PHONY : ClangTidyModule/FuncParamsNaming.o
+
+# target to build an object file
+ClangTidyModule/FuncParamsNaming.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/FuncParamsNaming.cpp.o
+.PHONY : ClangTidyModule/FuncParamsNaming.cpp.o
+
+ClangTidyModule/FuncParamsNaming.i: ClangTidyModule/FuncParamsNaming.cpp.i
+.PHONY : ClangTidyModule/FuncParamsNaming.i
+
+# target to preprocess a source file
+ClangTidyModule/FuncParamsNaming.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/FuncParamsNaming.cpp.i
+.PHONY : ClangTidyModule/FuncParamsNaming.cpp.i
+
+ClangTidyModule/FuncParamsNaming.s: ClangTidyModule/FuncParamsNaming.cpp.s
+.PHONY : ClangTidyModule/FuncParamsNaming.s
+
+# target to generate assembly for a file
+ClangTidyModule/FuncParamsNaming.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/FuncParamsNaming.cpp.s
+.PHONY : ClangTidyModule/FuncParamsNaming.cpp.s
+
 ClangTidyModule/IrsTidyModule.o: ClangTidyModule/IrsTidyModule.cpp.o
 .PHONY : ClangTidyModule/IrsTidyModule.o
 
@@ -304,6 +328,9 @@ help:
 	@echo "... ClangTidyModule/ClassFieldNaming.o"
 	@echo "... ClangTidyModule/ClassFieldNaming.i"
 	@echo "... ClangTidyModule/ClassFieldNaming.s"
+	@echo "... ClangTidyModule/FuncParamsNaming.o"
+	@echo "... ClangTidyModule/FuncParamsNaming.i"
+	@echo "... ClangTidyModule/FuncParamsNaming.s"
 	@echo "... ClangTidyModule/IrsTidyModule.o"
 	@echo "... ClangTidyModule/IrsTidyModule.i"
 	@echo "... ClangTidyModule/IrsTidyModule.s"

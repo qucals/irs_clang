@@ -25,7 +25,8 @@ add_library(irs-tidy-module
         ClangTidyModule/IrsTidyModule.cpp
         ClangTidyModule/TypeNamingCheck.cpp
         ClangTidyModule/TypedefNamingCheck.cpp
-        ClangTidyModule/ClassFieldNaming.cpp)
+        ClangTidyModule/ClassFieldNaming.cpp
+        ClangTidyModule/FuncParamsNaming.cpp)
 
 target_include_directories(irs-tidy-module PRIVATE ${CLANG_INCLUDE_DIRS})
 target_link_libraries(irs-tidy-module PRIVATE clang-tidy)

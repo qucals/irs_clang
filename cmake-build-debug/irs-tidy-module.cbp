@@ -138,6 +138,12 @@
 		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/ClassFieldNaming.h">
 			<Option target="irs-tidy-module"/>
 		</Unit>
+		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/FuncParamsNaming.cpp">
+			<Option target="irs-tidy-module"/>
+		</Unit>
+		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/FuncParamsNaming.h">
+			<Option target="irs-tidy-module"/>
+		</Unit>
 		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/IrsTidyModule.cpp">
 			<Option target="irs-tidy-module"/>
 		</Unit>
