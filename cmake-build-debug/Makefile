@@ -191,6 +191,30 @@ irs-tidy-module/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/build
 .PHONY : irs-tidy-module/fast
 
+ClangTidyModule/ClassFieldNaming.o: ClangTidyModule/ClassFieldNaming.cpp.o
+.PHONY : ClangTidyModule/ClassFieldNaming.o
+
+# target to build an object file
+ClangTidyModule/ClassFieldNaming.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/ClassFieldNaming.cpp.o
+.PHONY : ClangTidyModule/ClassFieldNaming.cpp.o
+
+ClangTidyModule/ClassFieldNaming.i: ClangTidyModule/ClassFieldNaming.cpp.i
+.PHONY : ClangTidyModule/ClassFieldNaming.i
+
+# target to preprocess a source file
+ClangTidyModule/ClassFieldNaming.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/ClassFieldNaming.cpp.i
+.PHONY : ClangTidyModule/ClassFieldNaming.cpp.i
+
+ClangTidyModule/ClassFieldNaming.s: ClangTidyModule/ClassFieldNaming.cpp.s
+.PHONY : ClangTidyModule/ClassFieldNaming.s
+
+# target to generate assembly for a file
+ClangTidyModule/ClassFieldNaming.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/ClassFieldNaming.cpp.s
+.PHONY : ClangTidyModule/ClassFieldNaming.cpp.s
+
 ClangTidyModule/IrsTidyModule.o: ClangTidyModule/IrsTidyModule.cpp.o
 .PHONY : ClangTidyModule/IrsTidyModule.o
 
@@ -277,6 +301,9 @@ help:
 	@echo "... intrinsics_gen"
 	@echo "... omp_gen"
 	@echo "... irs-tidy-module"
+	@echo "... ClangTidyModule/ClassFieldNaming.o"
+	@echo "... ClangTidyModule/ClassFieldNaming.i"
+	@echo "... ClangTidyModule/ClassFieldNaming.s"
 	@echo "... ClangTidyModule/IrsTidyModule.o"
 	@echo "... ClangTidyModule/IrsTidyModule.i"
 	@echo "... ClangTidyModule/IrsTidyModule.s"

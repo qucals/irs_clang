@@ -12,3 +12,4 @@ endfunction()
 
 add_run_clang_tidy_test(irs-type-naming)
 add_run_clang_tidy_test(irs-typedef-naming)
+add_run_clang_tidy_test(irs-class-field-naming)

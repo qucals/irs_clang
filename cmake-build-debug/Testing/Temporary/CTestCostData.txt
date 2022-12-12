@@ -1,3 +1,7 @@
 RunClangTidy.irs-type-naming 0 0
+RunClangTidy.irs-typedef-naming 0 0
+RunClangTidy.irs-class-field-naming 0 0
 ---
 RunClangTidy.irs-type-naming
+RunClangTidy.irs-typedef-naming
+RunClangTidy.irs-class-field-naming

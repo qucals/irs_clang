@@ -9,8 +9,6 @@ namespace tidy
 namespace irs
 {
 
-using namespace ast_matchers;
-
 void TypedefNamingCheck::registerMatchers(ast_matchers::MatchFinder* apFinder)
 {
   apFinder->addMatcher(
