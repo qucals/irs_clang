@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/totalboy/Projects/C++/irsclang/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"/Users/totalboy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/CLion.app/Contents/bin/cmake/mac/bin/ctest" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -117,41 +127,117 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named irsclang
+# Target rules for targets named intrinsics_gen
 
 # Build rule for target.
-irsclang: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 irsclang
-.PHONY : irsclang
+intrinsics_gen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intrinsics_gen
+.PHONY : intrinsics_gen
 
 # fast build rule for target.
-irsclang/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irsclang.dir/build.make CMakeFiles/irsclang.dir/build
-.PHONY : irsclang/fast
+intrinsics_gen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/build
+.PHONY : intrinsics_gen/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named omp_gen
+
+# Build rule for target.
+omp_gen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omp_gen
+.PHONY : omp_gen
+
+# fast build rule for target.
+omp_gen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omp_gen.dir/build.make CMakeFiles/omp_gen.dir/build
+.PHONY : omp_gen/fast
+
+#=============================================================================
+# Target rules for targets named acc_gen
+
+# Build rule for target.
+acc_gen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 acc_gen
+.PHONY : acc_gen
+
+# fast build rule for target.
+acc_gen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acc_gen.dir/build.make CMakeFiles/acc_gen.dir/build
+.PHONY : acc_gen/fast
+
+#=============================================================================
+# Target rules for targets named clang-tablegen-targets
+
+# Build rule for target.
+clang-tablegen-targets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clang-tablegen-targets
+.PHONY : clang-tablegen-targets
+
+# fast build rule for target.
+clang-tablegen-targets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-tablegen-targets.dir/build.make CMakeFiles/clang-tablegen-targets.dir/build
+.PHONY : clang-tablegen-targets/fast
+
+#=============================================================================
+# Target rules for targets named irs-tidy-module
+
+# Build rule for target.
+irs-tidy-module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 irs-tidy-module
+.PHONY : irs-tidy-module
+
+# fast build rule for target.
+irs-tidy-module/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/build
+.PHONY : irs-tidy-module/fast
+
+ClangTidyModule/IrsTidyModule.o: ClangTidyModule/IrsTidyModule.cpp.o
+.PHONY : ClangTidyModule/IrsTidyModule.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irsclang.dir/build.make CMakeFiles/irsclang.dir/main.cpp.o
-.PHONY : main.cpp.o
+ClangTidyModule/IrsTidyModule.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/IrsTidyModule.cpp.o
+.PHONY : ClangTidyModule/IrsTidyModule.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+ClangTidyModule/IrsTidyModule.i: ClangTidyModule/IrsTidyModule.cpp.i
+.PHONY : ClangTidyModule/IrsTidyModule.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irsclang.dir/build.make CMakeFiles/irsclang.dir/main.cpp.i
-.PHONY : main.cpp.i
+ClangTidyModule/IrsTidyModule.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/IrsTidyModule.cpp.i
+.PHONY : ClangTidyModule/IrsTidyModule.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+ClangTidyModule/IrsTidyModule.s: ClangTidyModule/IrsTidyModule.cpp.s
+.PHONY : ClangTidyModule/IrsTidyModule.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/irsclang.dir/build.make CMakeFiles/irsclang.dir/main.cpp.s
-.PHONY : main.cpp.s
+ClangTidyModule/IrsTidyModule.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/IrsTidyModule.cpp.s
+.PHONY : ClangTidyModule/IrsTidyModule.cpp.s
+
+ClangTidyModule/TypeNamingCheck.o: ClangTidyModule/TypeNamingCheck.cpp.o
+.PHONY : ClangTidyModule/TypeNamingCheck.o
+
+# target to build an object file
+ClangTidyModule/TypeNamingCheck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypeNamingCheck.cpp.o
+.PHONY : ClangTidyModule/TypeNamingCheck.cpp.o
+
+ClangTidyModule/TypeNamingCheck.i: ClangTidyModule/TypeNamingCheck.cpp.i
+.PHONY : ClangTidyModule/TypeNamingCheck.i
+
+# target to preprocess a source file
+ClangTidyModule/TypeNamingCheck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypeNamingCheck.cpp.i
+.PHONY : ClangTidyModule/TypeNamingCheck.cpp.i
+
+ClangTidyModule/TypeNamingCheck.s: ClangTidyModule/TypeNamingCheck.cpp.s
+.PHONY : ClangTidyModule/TypeNamingCheck.s
+
+# target to generate assembly for a file
+ClangTidyModule/TypeNamingCheck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypeNamingCheck.cpp.s
+.PHONY : ClangTidyModule/TypeNamingCheck.cpp.s
 
 # Help Target
 help:
@@ -161,10 +247,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... irsclang"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test"
+	@echo "... acc_gen"
+	@echo "... clang-tablegen-targets"
+	@echo "... intrinsics_gen"
+	@echo "... omp_gen"
+	@echo "... irs-tidy-module"
+	@echo "... ClangTidyModule/IrsTidyModule.o"
+	@echo "... ClangTidyModule/IrsTidyModule.i"
+	@echo "... ClangTidyModule/IrsTidyModule.s"
+	@echo "... ClangTidyModule/TypeNamingCheck.o"
+	@echo "... ClangTidyModule/TypeNamingCheck.i"
+	@echo "... ClangTidyModule/TypeNamingCheck.s"
 .PHONY : help
 
 

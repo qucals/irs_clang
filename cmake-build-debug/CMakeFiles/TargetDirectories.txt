@@ -1,3 +1,11 @@
-/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/irsclang.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/intrinsics_gen.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/omp_gen.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/acc_gen.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/clang-tablegen-targets.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/irs-tidy-module.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/test.dir
 /Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/Tests/CMakeFiles/test.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/Tests/CMakeFiles/edit_cache.dir
+/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/Tests/CMakeFiles/rebuild_cache.dir
