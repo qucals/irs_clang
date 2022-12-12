@@ -9,29 +9,30 @@ namespace clang
 namespace tidy
 {
 
-namespace readability
+namespace irs
 {
 
 class TypeNamingCheck : public ClangTidyCheck
 {
 public:
-    TypeNamingCheck(StringRef aName, ClangTidyContext* apContext)
-        : ClangTidyCheck(aName, apContext)
-    {}
+  TypeNamingCheck(StringRef aName, ClangTidyContext* apContext)
+    : ClangTidyCheck(aName, apContext)
+  {
+  }
 
-    bool isLanguageVersionSupported(const LangOptions& aLangOpt) const override
-    {
-        return aLangOpt.CPlusPlus;
-    }
+  bool isLanguageVersionSupported(const LangOptions& aLangOpt) const override
+  {
+    return aLangOpt.CPlusPlus;
+  }
 
-    void registerMatchers(ast_matchers::MatchFinder* apFinder) override;
-    void check(const ast_matchers::MatchFinder::MatchResult& aResult) override;
+  void registerMatchers(ast_matchers::MatchFinder* apFinder) override;
+  void check(const ast_matchers::MatchFinder::MatchResult& aResult) override;
 };
 
-}// namespace readability
+} // namespace irs
 
-}// namespace tidy
+} // namespace tidy
 
-}// namespace clang
+} // namespace clang
 
-#endif//IRSCLANG_TYPENAMINGCHECK_H
+#endif // IRSCLANG_TYPENAMINGCHECK_H

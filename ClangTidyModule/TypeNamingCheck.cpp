@@ -6,36 +6,53 @@ namespace clang
 namespace tidy
 {
 
-namespace readability
+namespace irs
 {
 
 using namespace ast_matchers;
 
 void TypeNamingCheck::registerMatchers(ast_matchers::MatchFinder* apFinder)
 {
-//    apFinder->addMatcher(ast_matchers::cxxRecordDecl().bind("typeNaming"), this);
-    apFinder->addMatcher(functionDecl().bind("func-decl"), this);
+  // классы и структуры, включая шаблонные
+  apFinder->addMatcher(
+    ast_matchers::cxxRecordDecl().bind("classTypeNaming"), this);
+  // перечисления
+  apFinder->addMatcher(ast_matchers::enumDecl().bind("enumTypeNaming"), this);
 }
 
-void TypeNamingCheck::check(const ast_matchers::MatchFinder::MatchResult& aResult)
+void TypeNamingCheck::check(
+  const ast_matchers::MatchFinder::MatchResult& aResult)
 {
-//    const auto pMatchedDecl = aResult.Nodes.getNodeAs<CXXRecordDecl>("typeNaming");
-//    if (pMatchedDecl->getName().endswith("_t")) {
-//        return;
-//    }
-//    diag(pMatchedDecl->getLocation(), "class %0 has different postfix of _t")
-//        << pMatchedDecl
-//        << FixItHint::CreateInsertion(pMatchedDecl->getLocation(), "_t");
-    const auto *MatchedDecl = aResult.Nodes.getNodeAs<FunctionDecl>("func-decl");
-    if (MatchedDecl->getName().startswith("awesome_"))
-        return;
-    diag(MatchedDecl->getLocation(), "function %0 is insufficiently awesome")
-        << MatchedDecl
-        << FixItHint::CreateInsertion(MatchedDecl->getLocation(), "awesome_");
+  if (aResult.Nodes.getNodeAs<CXXRecordDecl>("classTypeNaming")) {
+    const auto pMatchedDecl =
+      aResult.Nodes.getNodeAs<CXXRecordDecl>("classTypeNaming");
+    if (pMatchedDecl->getName().endswith("_t")) {
+      return;
+    }
+
+    const auto insertLoc = pMatchedDecl->getLocation().getLocWithOffset(
+      static_cast<int>(pMatchedDecl->getName().size()));
+    diag(pMatchedDecl->getLocation(),
+      "class (struct) %0 has different postfix of _t")
+      << pMatchedDecl << FixItHint::CreateInsertion(insertLoc, "_t");
+  }
+
+  if (aResult.Nodes.getNodeAs<EnumDecl>("enumTypeNaming")) {
+    const auto pMatchedDecl =
+      aResult.Nodes.getNodeAs<EnumDecl>("enumTypeNaming");
+    if (pMatchedDecl->getName().endswith("_t")) {
+      return;
+    }
+
+    const auto insertLoc = pMatchedDecl->getLocation().getLocWithOffset(
+      static_cast<int>(pMatchedDecl->getName().size()));
+    diag(pMatchedDecl->getLocation(), "enum %0 has different postfix of _t")
+      << pMatchedDecl << FixItHint::CreateInsertion(insertLoc, "_t");
+  }
 }
 
-}// namespace irs
+} // namespace irs
 
-}// namespace tidy
+} // namespace tidy
 
-}// namespace clang
+} // namespace clang

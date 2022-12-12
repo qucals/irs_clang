@@ -141,6 +141,12 @@
 		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypeNamingCheck.h">
 			<Option target="irs-tidy-module"/>
 		</Unit>
+		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypedefNamingCheck.cpp">
+			<Option target="irs-tidy-module"/>
+		</Unit>
+		<Unit filename="/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypedefNamingCheck.h">
+			<Option target="irs-tidy-module"/>
+		</Unit>
 		<Unit filename="/Users/totalboy/Projects/C++/irsclang/.clang-format">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

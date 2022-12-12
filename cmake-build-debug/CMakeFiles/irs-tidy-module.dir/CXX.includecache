@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/IrsTidyModule.cpp
-clang-tidy/ClangTidyModule.h
--
-clang-tidy/ClangTidyModuleRegistry.h
--
-TypeNamingCheck.h
-/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypeNamingCheck.h
+/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypedefNamingCheck.cpp
+TypedefNamingCheck.h
+/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypedefNamingCheck.h
 
-/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypeNamingCheck.h
+/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypedefNamingCheck.h
 clang-tidy/ClangTidyCheck.h
 -
 
@@ -53,24 +49,6 @@ llvm/ADT/StringSet.h
 /opt/homebrew/opt/llvm/include/clang-tidy/llvm/ADT/StringSet.h
 llvm/Support/Regex.h
 /opt/homebrew/opt/llvm/include/clang-tidy/llvm/Support/Regex.h
-
-/opt/homebrew/opt/llvm/include/clang-tidy/ClangTidyModule.h
-ClangTidyOptions.h
-/opt/homebrew/opt/llvm/include/clang-tidy/ClangTidyOptions.h
-llvm/ADT/StringMap.h
-/opt/homebrew/opt/llvm/include/clang-tidy/llvm/ADT/StringMap.h
-llvm/ADT/StringRef.h
-/opt/homebrew/opt/llvm/include/clang-tidy/llvm/ADT/StringRef.h
-functional
--
-memory
--
-
-/opt/homebrew/opt/llvm/include/clang-tidy/ClangTidyModuleRegistry.h
-ClangTidyModule.h
-/opt/homebrew/opt/llvm/include/clang-tidy/ClangTidyModule.h
-llvm/Support/Registry.h
-/opt/homebrew/opt/llvm/include/clang-tidy/llvm/Support/Registry.h
 
 /opt/homebrew/opt/llvm/include/clang-tidy/ClangTidyOptions.h
 llvm/ADT/IntrusiveRefCntPtr.h
@@ -3360,10 +3338,6 @@ llvm-c/DataTypes.h
 
 /opt/homebrew/opt/llvm/include/llvm/Support/Debug.h
 
-/opt/homebrew/opt/llvm/include/llvm/Support/DynamicLibrary.h
-string
--
-
 /opt/homebrew/opt/llvm/include/llvm/Support/Endian.h
 llvm/Support/Compiler.h
 /opt/homebrew/opt/llvm/include/llvm/Support/llvm/Support/Compiler.h
@@ -3666,20 +3640,6 @@ llvm/Support/Compiler.h
 llvm/ADT/BitmaskEnum.h
 /opt/homebrew/opt/llvm/include/llvm/Support/llvm/ADT/BitmaskEnum.h
 string
--
-
-/opt/homebrew/opt/llvm/include/llvm/Support/Registry.h
-llvm/ADT/STLExtras.h
-/opt/homebrew/opt/llvm/include/llvm/Support/llvm/ADT/STLExtras.h
-llvm/ADT/StringRef.h
-/opt/homebrew/opt/llvm/include/llvm/Support/llvm/ADT/StringRef.h
-llvm/ADT/iterator_range.h
-/opt/homebrew/opt/llvm/include/llvm/Support/llvm/ADT/iterator_range.h
-llvm/Support/Compiler.h
-/opt/homebrew/opt/llvm/include/llvm/Support/llvm/Support/Compiler.h
-llvm/Support/DynamicLibrary.h
-/opt/homebrew/opt/llvm/include/llvm/Support/llvm/Support/DynamicLibrary.h
-memory
 -
 
 /opt/homebrew/opt/llvm/include/llvm/Support/ReverseIteration.h

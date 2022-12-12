@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/IrsTidyModule.cpp" "/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/irs-tidy-module.dir/ClangTidyModule/IrsTidyModule.cpp.o"
   "/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypeNamingCheck.cpp" "/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypeNamingCheck.cpp.o"
+  "/Users/totalboy/Projects/C++/irsclang/ClangTidyModule/TypedefNamingCheck.cpp" "/Users/totalboy/Projects/C++/irsclang/cmake-build-debug/CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypedefNamingCheck.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

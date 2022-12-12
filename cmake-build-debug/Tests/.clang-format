@@ -1,66 +1,95 @@
-# Generated from CLion C/C++ Code Style settings
-BasedOnStyle: LLVM
-AccessModifierOffset: -4
-AlignAfterOpenBracket: Align
+# Format Style Options - Created with Clang Power Tools
+---
+AccessModifierOffset: -2
+AlignAfterOpenBracket: DontAlign
 AlignConsecutiveAssignments: None
-AlignOperands: Align
-AllowAllArgumentsOnNextLine: false
+AlignConsecutiveBitFields: None
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: None
+AlignEscapedNewlines: DontAlign
+AlignOperands: DontAlign
+AlignTrailingComments: false
+AllowAllArgumentsOnNextLine: true
 AllowAllConstructorInitializersOnNextLine: false
-AllowAllParametersOfDeclarationOnNextLine: false
-AllowShortBlocksOnASingleLine: Always
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: Never
 AllowShortCaseLabelsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: Always
-AllowShortLambdasOnASingleLine: All
-AllowShortLoopsOnASingleLine: true
+AllowShortLambdasOnASingleLine: Empty
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
-BreakBeforeBraces: Custom
-BraceWrapping:
+BasedOnStyle: LLVM
+BinPackArguments: true
+BinPackParameters: true
+BraceWrapping: 
   AfterCaseLabel: false
   AfterClass: true
-  AfterControlStatement: Never
-  AfterEnum: true
+  AfterControlStatement: false
+  AfterEnum: false
   AfterFunction: true
   AfterNamespace: true
+  AfterObjCDeclaration: false
+  AfterStruct: true
   AfterUnion: true
+  AfterExternBlock: true
   BeforeCatch: false
   BeforeElse: false
   IndentBraces: false
-  SplitEmptyFunction: false
+  SplitEmptyFunction: true
   SplitEmptyRecord: true
-BreakBeforeBinaryOperators: None
-BreakBeforeTernaryOperators: true
-BreakConstructorInitializers: BeforeComma
+  SplitEmptyNamespace: true
+  BeforeLambdaBody: false
+  BeforeWhile: false
+BreakBeforeBraces: Custom
+BreakBeforeInheritanceComma: false
 BreakInheritanceList: BeforeColon
-ColumnLimit: 0
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerIndentWidth: 2
+BreakStringLiterals: true
+ColumnLimit: 80
+CommentPragmas: '^ IWYU pragma:'
 CompactNamespaces: false
-ContinuationIndentWidth: 4
-IndentCaseLabels: true
-IndentPPDirectives: None
-IndentWidth: 4
-KeepEmptyLinesAtTheStartOfBlocks: true
-MaxEmptyLinesToKeep: 2
-NamespaceIndentation: None
-ObjCSpaceAfterProperty: false
-ObjCSpaceBeforeProtocolList: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ContinuationIndentWidth: 2
+Cpp11BracedListStyle: false
+DeriveLineEnding: true
+FixNamespaceComments: true
+IncludeBlocks: Merge
+IncludeCategories: 
+  - Regex: '^"(llvm|llvm-c|clang|clang-c)/'
+    Priority: 2
+    SortPriority: 0
+    CaseSensitive: false
+  - Regex: '^(<|"(gtest|gmock|isl|json)/)'
+    Priority: 3
+    SortPriority: 0
+    CaseSensitive: false
+  - Regex: '.*'
+    Priority: 1
+    SortPriority: 0
+    CaseSensitive: false
+Language: Cpp
+PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyBreakTemplateDeclaration: 10
+PenaltyExcessCharacter: 1000000
 PointerAlignment: Left
-ReflowComments: false
-SpaceAfterCStyleCast: true
+ReflowComments: true
+SortIncludes: true
 SpaceAfterLogicalNot: false
-SpaceAfterTemplateKeyword: true
+SpaceAfterTemplateKeyword: false
 SpaceBeforeAssignmentOperators: true
-SpaceBeforeCpp11BracedList: false
-SpaceBeforeCtorInitializerColon: true
-SpaceBeforeInheritanceColon: true
-SpaceBeforeParens: ControlStatements
-SpaceBeforeRangeBasedForLoopColon: false
-SpaceInEmptyParentheses: false
-SpacesBeforeTrailingComments: 0
-SpacesInAngles: false
-SpacesInCStyleCastParentheses: false
-SpacesInContainerLiterals: false
-SpacesInParentheses: false
-SpacesInSquareBrackets: false
-TabWidth: 4
+SpaceBeforeCtorInitializerColon: false
+TabWidth: 2
 UseTab: Never
+Standard: Cpp03
+...

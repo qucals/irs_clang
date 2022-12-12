@@ -239,6 +239,30 @@ ClangTidyModule/TypeNamingCheck.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypeNamingCheck.cpp.s
 .PHONY : ClangTidyModule/TypeNamingCheck.cpp.s
 
+ClangTidyModule/TypedefNamingCheck.o: ClangTidyModule/TypedefNamingCheck.cpp.o
+.PHONY : ClangTidyModule/TypedefNamingCheck.o
+
+# target to build an object file
+ClangTidyModule/TypedefNamingCheck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypedefNamingCheck.cpp.o
+.PHONY : ClangTidyModule/TypedefNamingCheck.cpp.o
+
+ClangTidyModule/TypedefNamingCheck.i: ClangTidyModule/TypedefNamingCheck.cpp.i
+.PHONY : ClangTidyModule/TypedefNamingCheck.i
+
+# target to preprocess a source file
+ClangTidyModule/TypedefNamingCheck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypedefNamingCheck.cpp.i
+.PHONY : ClangTidyModule/TypedefNamingCheck.cpp.i
+
+ClangTidyModule/TypedefNamingCheck.s: ClangTidyModule/TypedefNamingCheck.cpp.s
+.PHONY : ClangTidyModule/TypedefNamingCheck.s
+
+# target to generate assembly for a file
+ClangTidyModule/TypedefNamingCheck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/irs-tidy-module.dir/build.make CMakeFiles/irs-tidy-module.dir/ClangTidyModule/TypedefNamingCheck.cpp.s
+.PHONY : ClangTidyModule/TypedefNamingCheck.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,6 +283,9 @@ help:
 	@echo "... ClangTidyModule/TypeNamingCheck.o"
 	@echo "... ClangTidyModule/TypeNamingCheck.i"
 	@echo "... ClangTidyModule/TypeNamingCheck.s"
+	@echo "... ClangTidyModule/TypedefNamingCheck.o"
+	@echo "... ClangTidyModule/TypedefNamingCheck.i"
+	@echo "... ClangTidyModule/TypedefNamingCheck.s"
 .PHONY : help
 
 
